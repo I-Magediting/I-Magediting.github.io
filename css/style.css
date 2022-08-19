@@ -1,0 +1,238 @@
+.slider{
+	position: relative;
+  width: 500px;
+  height: 265px;
+ 
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+
+  position: relative;
+  height: 100%;
+ 
+  float: left;
+}
+ 
+.img-box img{
+	width: 500px;
+  height: 265px;
+}
+
+.btn1{
+ 
+ 
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  font-size:30px;
+  text-align: center;
+  color: white;
+  text-decoration: grey;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+  left: 10px;
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  padding: 0;
+  background: transparent;
+
+
+}
+
+.btn2{
+  
+  
+  
+ text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-size:30px;
+  color: white;
+  text-decoration: grey;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+  right: 10px;
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  padding: 0;
+  background: transparent;
+
+
+
+}
+.btn2:hover{
+	
+	background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0;	
+}
+
+
+.btn1:hover{
+	
+	background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0;	
+}
+....................................................
+.slider1{
+  position: relative;
+  width: 500px;
+  height: 265px;
+ 
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+
+  position: relative;
+  height: 100%;
+ 
+  float: left;
+}
+ 
+.img-box1 img{
+  width: 500px;
+  height: 265px;
+}
+
+.btn3{
+ 
+ 
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  font-size:30px;
+  text-align: center;
+  color: white;
+  text-decoration: grey;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+  left: 50px;
+  width: 50px;
+  line-height: 40px;
+  border-radius: 50%;
+  border-color: transparent;
+  padding: 0;
+  background: transparent;
+
+
+}
+
+.btn4{
+  
+  
+  
+ text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-size:30px;
+  color: white;
+  text-decoration: grey;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+  right: 40px;
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  padding: 0;
+  background: transparent;
+
+
+
+}
+.btn4:hover{
+  
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0; 
+}
+
+
+.btn3:hover{
+  
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0; 
+}
+..........................................................................
+.slider2{
+  position: relative;
+  width: 500px;
+  height: 265px;
+ 
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+
+  position: relative;
+  height: 100%;
+ 
+  float: left;
+}
+ 
+.img-box2 img{
+  width: 500px;
+  height: 265px;
+}
+
+.btn5{
+ 
+ 
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  font-size:30px;
+  text-align: center;
+  color: white;
+  text-decoration: grey;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+  left: 40px;
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  padding: 0;
+  background: transparent;
+
+
+}
+
+.btn6{
+  
+  
+  
+ text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-size:30px;
+  color: white;
+  text-decoration: grey;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+  right: 40px;
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  padding: 0;
+  background: transparent;
+
+
+
+}
+.btn6:hover{
+  
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0; 
+}
+
+
+.btn5:hover{
+  
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0; 
+}
+
+

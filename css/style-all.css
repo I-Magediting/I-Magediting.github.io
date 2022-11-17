@@ -29,9 +29,9 @@
 /*===========================
      01.COMMON css 
 ===========================*/
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700|Lato:300,400,700&display=swap");
 body {
-font-family: 'Open Sans', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #6A6972;
@@ -77,7 +77,7 @@ h3,
 h4,
 h5,
 h6 {
-font-family: 'Nunito Sans', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: #2E2E2E;
   margin: 0px; }
@@ -117,7 +117,7 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100vh; }
+  height: 100%; }
 
 /*===== All Slick Slide Outline Style =====*/
 .slick-slide {
@@ -197,11 +197,9 @@ p {
   @media (max-width: 767px) {
     .section-title .title {
       font-size: 24px; } }
-  section.logo-section .section-title .title span {
-    font-weight: 600;
-    display: contents;
-    font-size: 35px;
-}
+  .section-title .title span {
+    font-weight: 400;
+    display: contents; }
 
 /*===== All Slick Slide Outline Style =====*/
 .slick-slide {
@@ -495,8 +493,8 @@ p {
 ===========================*/
 /*===== NAVBAR =====*/
 .navbar-area {
-/*  position: absolute;
-*/  top: 0;
+  position: absolute;
+  top: 0;
   left: 10;
   width: 100%;
   z-index: 99;
@@ -507,8 +505,6 @@ p {
   transition: all 0.3s ease-out 0s; }
 
 .sticky {
-  display: none;
-  height: 50px;
   position: fixed;
   z-index: 99;
   background-color: #fff;
@@ -535,23 +531,21 @@ p {
 
 .navbar-brand {
   padding: 0; }
-  
 
 .navbar-toggler {
   padding: 0; }
- .navbar-toggler .toggler-icon {
-    width: 20px;
+  .navbar-toggler .toggler-icon {
+    width: 30px;
     height: 2px;
     background-color: #fff;
     display: block;
-    margin: 3px 0;
+    margin: 5px 0;
     position: relative;
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
     -ms-transition: all 0.3s ease-out 0s;
     -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s;
-}
+    transition: all 0.3s ease-out 0s; }
   .navbar-toggler.active .toggler-icon:nth-of-type(1) {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -611,9 +605,9 @@ p {
     .navbar-nav .nav-item {
       margin: 0; } }
   .navbar-nav .nav-item a {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 400;
-    color: #000;
+    color: #fff;
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
     -ms-transition: all 0.3s ease-out 0s;
@@ -767,26 +761,20 @@ p {
 
 /*===== HEADER HERO =====*/
 .header-hero {
-    position: relative;
-    z-index: 5;
-    background-position: top center;
-    display: flex;
-    align-items: center;
-}
+  position: relative;
+  z-index: 5;
+  background-position: top; }
 
 #particles-1 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: -1; }
 
 .header-hero-content {
-/*    padding-top: 220px;
-*/    text-align: left !important;
-}
-
+  padding-top: 180px; }
   @media (max-width: 767px) {
     .header-hero-content {
       padding-top: 100px; } }
@@ -868,7 +856,7 @@ p {
       04.SERVICES css 
 ===========================*/
 .single-services {
-  background-color: #948d8d30;
+  background-color: #fff;
   -webkit-box-shadow: 0px 5px 30px 0px rgba(167, 167, 167, 0.16);
   -moz-box-shadow: 0px 5px 30px 0px rgba(167, 167, 167, 0.16);
   box-shadow: 0px 5px 30px 0px rgba(167, 167, 167, 0.16);
@@ -1411,15 +1399,13 @@ p {
   left: 0;
   height: 70%;
   width: 100%;
-      background-color: #d7655a;
-
-/*  background-image: url(../images/Curse76.jpg);
-*/  background-position: top center;
+  background-image: url(../images/Curse76.jpg);
+  background-position: top center;
   z-index: -1;
   background-size: cover; }
   @media only screen and (min-width: 100px) {
     .footer-area::before {
-      height: 470px; } }
+      height: 560px; } }
 
 #particles-2 {
   position: absolute;
@@ -1442,24 +1428,18 @@ p {
 
 .footer-about .social {
   margin-top: 40px; 
-/*text-align: center;
-*/}
+text-align: center;}
   
-   .footer-about .social li a {
-    border: 1px solid #fff;
-    font-size: 18px;
-    color: #fff;
-    -webkit-transition: all 0.3s ease-out 0s;
-    -moz-transition: all 0.3s ease-out 0s;
-    -ms-transition: all 0.3s ease-out 0s;
-    -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    line-height: 32px;
-    border-radius: 4px;
-}
+    .footer-about .social li a {
+      font-size: 22px;
+      color: #fff;
+      -webkit-transition: all 0.3s ease-out 0s;
+      -moz-transition: all 0.3s ease-out 0s;
+      -ms-transition: all 0.3s ease-out 0s;
+      -o-transition: all 0.3s ease-out 0s;
+      transition: all 0.3s ease-out 0s; }
+      .footer-about .social li a:hover {
+        color: grey; }
 
 .footer-title .title {
   font-size: 24px;
@@ -1487,8 +1467,8 @@ p {
         .link-wrapper .link li a:hover {
           color: #FE8464; }
 
-/*.footer-contact .contact {
-  padding-top: 20px; }*/
+.footer-contact .contact {
+  padding-top: 20px; }
   .footer-contact .contact li {
     margin-top: 20px;
     font-size: 16px;
@@ -1503,8 +1483,7 @@ p {
   padding-top: 15px;
   text-align: center; }
   .copyright-content p {
-    color: #fff; 
-    text-align: center;}
+    color: #fff; }
   .copyright-content a {
     font-size: 16px;
     color: #fff;

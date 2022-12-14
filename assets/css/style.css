@@ -507,13 +507,8 @@ p {
   transition: all 0.3s ease-out 0s; }
 
 .sticky {
-<<<<<<< HEAD
 /*  display: none;
-*/  height: 100px;
-=======
-  display: none;
-  height: 50px;
->>>>>>> f2e5bcc20a7d1696d40094bf2a417a2417c7ef65
+*/  height: auto;
   position: fixed;
   z-index: 99;
   background-color: #fff;
@@ -798,11 +793,11 @@ p {
   .header-hero-content .header-sub-title {
     font-size: 40px;
     font-weight: 500;
-    color: #000; }
+    color: #fff; }
     .header-hero-content .header-sub-title2 {
     font-size: 20px;
     font-weight: 500;
-    color: #000; }
+    color: #fff; }
     @media (max-width: 767px) {
       .header-hero-content .header-sub-title {
         font-size: 24px; } }
@@ -1418,11 +1413,7 @@ p {
   width: 100%;
       background-color: #d7655a;
 
-<<<<<<< HEAD
 /*  background-image: url(https://miro.medium.com/max/600/1*wac7tkozLGkEx7EFOYVNJw.gif);
-=======
-/*  background-image: url(../images/Curse76.jpg);
->>>>>>> f2e5bcc20a7d1696d40094bf2a417a2417c7ef65
 */  background-position: top center;
   z-index: -1;
   background-size: cover; }

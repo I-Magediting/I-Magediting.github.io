@@ -8,7 +8,7 @@
  * Copyright (c) 2019 Daniel Eden
  */
 
-@-webkit-keyframes bounce {
+/*@-webkit-keyframes bounce {
   from,
   20%,
   53%,
@@ -111,10 +111,10 @@
   -webkit-animation-name: flash;
   animation-name: flash;
 }
-
+*/
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
-@-webkit-keyframes pulse {
+/*@-webkit-keyframes pulse {
   from {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
@@ -490,9 +490,9 @@
   animation-name: tada;
 }
 
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+*//* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
-@-webkit-keyframes wobble {
+/*@-webkit-keyframes wobble {
   from {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -1352,7 +1352,7 @@
   -webkit-animation-name: bounceOutUp;
   animation-name: bounceOutUp;
 }
-
+*//*
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -1361,9 +1361,9 @@
   to {
     opacity: 1;
   }
-}
+}*/
 
-@keyframes fadeIn {
+/*@keyframes fadeIn {
   from {
     opacity: 0;
   }
@@ -1376,9 +1376,9 @@
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
-}
+*/}
 
-@-webkit-keyframes fadeInDown {
+/*@-webkit-keyframes fadeInDown {
   from {
     opacity: 0;
     -webkit-transform: translate3d(0, -100%, 0);
@@ -1390,9 +1390,9 @@
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-}
+}*/
 
-@keyframes fadeInDown {
+/*@keyframes fadeInDown {
   from {
     opacity: 0;
     -webkit-transform: translate3d(0, -100%, 0);
@@ -1410,7 +1410,7 @@
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
 }
-
+*//*
 @-webkit-keyframes fadeInDownBig {
   from {
     opacity: 0;
@@ -1583,7 +1583,7 @@
     transform: translate3d(0, 40%, 0);
   }
 
-  to {
+  to -{
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -1897,9 +1897,9 @@
 .fadeOutUpBig {
   -webkit-animation-name: fadeOutUpBig;
   animation-name: fadeOutUpBig;
-}
+}*/
 
-@-webkit-keyframes flip {
+/*@-webkit-keyframes flip {
   from {
     -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
       rotate3d(0, 1, 0, -360deg);
@@ -2850,7 +2850,7 @@
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
-@-webkit-keyframes rollIn {
+/*@-webkit-keyframes rollIn {
   from {
     opacity: 0;
     -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
@@ -2885,7 +2885,7 @@
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
-@-webkit-keyframes rollOut {
+/*@-webkit-keyframes rollOut {
   from {
     opacity: 1;
   }
@@ -3303,7 +3303,8 @@
   }
 }
 
-.zoomOutUp {
+*/
+/*.zoomOutUp {
   -webkit-animation-name: zoomOutUp;
   animation-name: zoomOutUp;
 }
@@ -3613,6 +3614,9 @@
   animation-duration: 3s;
 }
 
+
+
+
 @media (print), (prefers-reduced-motion: reduce) {
   .animated {
     -webkit-animation-duration: 1ms !important;
@@ -3623,3 +3627,7 @@
     animation-iteration-count: 1 !important;
   }
 }
+
+
+
+*/

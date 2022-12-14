@@ -29,9 +29,9 @@
 /*===========================
      01.COMMON css 
 ===========================*/
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,700|Lato:300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
 body {
-  font-family: "Lato", sans-serif;
+font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #6A6972;
@@ -77,7 +77,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+font-family: 'Nunito Sans', sans-serif;
   font-weight: 700;
   color: #2E2E2E;
   margin: 0px; }
@@ -117,7 +117,7 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100%; }
+  height: 100vh; }
 
 /*===== All Slick Slide Outline Style =====*/
 .slick-slide {
@@ -197,9 +197,11 @@ p {
   @media (max-width: 767px) {
     .section-title .title {
       font-size: 24px; } }
-  .section-title .title span {
-    font-weight: 400;
-    display: contents; }
+  section.logo-section .section-title .title span {
+    font-weight: 600;
+    display: contents;
+    font-size: 35px;
+}
 
 /*===== All Slick Slide Outline Style =====*/
 .slick-slide {
@@ -493,8 +495,8 @@ p {
 ===========================*/
 /*===== NAVBAR =====*/
 .navbar-area {
-  position: absolute;
-  top: 0;
+/*  position: absolute;
+*/  top: 0;
   left: 10;
   width: 100%;
   z-index: 99;
@@ -505,6 +507,8 @@ p {
   transition: all 0.3s ease-out 0s; }
 
 .sticky {
+/*  display: none;
+*/  height: 100px;
   position: fixed;
   z-index: 99;
   background-color: #fff;
@@ -516,8 +520,8 @@ p {
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s; }
-  .sticky .navbar {
-    padding: 0px 0; }
+ /* .sticky .navbar {
+    padding: 0px 0; }*/
 
 .navbar {
   padding: 25px 0;
@@ -531,21 +535,23 @@ p {
 
 .navbar-brand {
   padding: 0; }
+  
 
 .navbar-toggler {
   padding: 0; }
-  .navbar-toggler .toggler-icon {
-    width: 30px;
+ .navbar-toggler .toggler-icon {
+    width: 20px;
     height: 2px;
     background-color: #fff;
     display: block;
-    margin: 5px 0;
+    margin: 3px 0;
     position: relative;
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
     -ms-transition: all 0.3s ease-out 0s;
     -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s; }
+    transition: all 0.3s ease-out 0s;
+}
   .navbar-toggler.active .toggler-icon:nth-of-type(1) {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -605,9 +611,9 @@ p {
     .navbar-nav .nav-item {
       margin: 0; } }
   .navbar-nav .nav-item a {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 400;
-    color: #fff;
+    color: #000;
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
     -ms-transition: all 0.3s ease-out 0s;
@@ -761,9 +767,12 @@ p {
 
 /*===== HEADER HERO =====*/
 .header-hero {
-  position: relative;
-  z-index: 5;
-  background-position: bottom center; }
+    position: relative;
+    z-index: 5;
+    background-position: top center;
+    display: flex;
+    align-items: center;
+}
 
 #particles-1 {
   position: absolute;
@@ -774,18 +783,21 @@ p {
   z-index: -1; }
 
 .header-hero-content {
-  padding-top: 180px; }
+/*    padding-top: 220px;
+*/    text-align: left !important;
+}
+
   @media (max-width: 767px) {
     .header-hero-content {
       padding-top: 100px; } }
   .header-hero-content .header-sub-title {
     font-size: 40px;
-    font-weight: 300;
-    color: #fff; }
+    font-weight: 500;
+    color: #000; }
     .header-hero-content .header-sub-title2 {
     font-size: 20px;
-    font-weight: 300;
-    color: #fff; }
+    font-weight: 500;
+    color: #000; }
     @media (max-width: 767px) {
       .header-hero-content .header-sub-title {
         font-size: 24px; } }
@@ -856,7 +868,7 @@ p {
       04.SERVICES css 
 ===========================*/
 .single-services {
-  background-color: #fff;
+  background-color: #948d8d30;
   -webkit-box-shadow: 0px 5px 30px 0px rgba(167, 167, 167, 0.16);
   -moz-box-shadow: 0px 5px 30px 0px rgba(167, 167, 167, 0.16);
   box-shadow: 0px 5px 30px 0px rgba(167, 167, 167, 0.16);
@@ -1399,13 +1411,15 @@ p {
   left: 0;
   height: 70%;
   width: 100%;
-  background-image: url(../images/Curse76.jpg);
-  background-position: top center;
+      background-color: #d7655a;
+
+/*  background-image: url(https://miro.medium.com/max/600/1*wac7tkozLGkEx7EFOYVNJw.gif);
+*/  background-position: top center;
   z-index: -1;
   background-size: cover; }
   @media only screen and (min-width: 100px) {
     .footer-area::before {
-      height: 560px; } }
+      height: 470px; } }
 
 #particles-2 {
   position: absolute;
@@ -1428,18 +1442,24 @@ p {
 
 .footer-about .social {
   margin-top: 40px; 
-text-align: center;}
+/*text-align: center;
+*/}
   
-    .footer-about .social li a {
-      font-size: 22px;
-      color: #fff;
-      -webkit-transition: all 0.3s ease-out 0s;
-      -moz-transition: all 0.3s ease-out 0s;
-      -ms-transition: all 0.3s ease-out 0s;
-      -o-transition: all 0.3s ease-out 0s;
-      transition: all 0.3s ease-out 0s; }
-      .footer-about .social li a:hover {
-        color: grey; }
+   .footer-about .social li a {
+    border: 1px solid #fff;
+    font-size: 18px;
+    color: #fff;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 4px;
+}
 
 .footer-title .title {
   font-size: 24px;
@@ -1467,8 +1487,8 @@ text-align: center;}
         .link-wrapper .link li a:hover {
           color: #FE8464; }
 
-.footer-contact .contact {
-  padding-top: 20px; }
+/*.footer-contact .contact {
+  padding-top: 20px; }*/
   .footer-contact .contact li {
     margin-top: 20px;
     font-size: 16px;
@@ -1483,7 +1503,8 @@ text-align: center;}
   padding-top: 15px;
   text-align: center; }
   .copyright-content p {
-    color: #fff; }
+    color: #fff; 
+    text-align: center;}
   .copyright-content a {
     font-size: 16px;
     color: #fff;

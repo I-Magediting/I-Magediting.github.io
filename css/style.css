@@ -1,3 +1,67 @@
+     
+/********************************************/
+/* ---- reset ---- */
+/*
+body {
+  margin: 0;
+  font:normal 75% Arial, Helvetica, sans-serif;
+}*/
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /*background-color: #b61924;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;*/
+}
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+/*  font-family: Helvetica, Arial, sans-serif;
+*/  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+/******************************************/
+
      .slider{
       position: relative;
       width: 500px;
@@ -164,6 +228,7 @@
       text-shadow: 0; 
     }
     ..........................................................................
+
     .slider2{
       position: relative;
       width: 500px;
@@ -623,22 +688,25 @@ section.real-section .experience-rightpart {
   section#facts {
       display: none;
   }
-  section.next-section h2 {
-      padding-top: 2em;
-      font-size: 48px;
-      font-weight: 400;
-      color: #fff;
-      position: relative;
-      animation: rightmove 3s infinite;
-      animation-iteration-count: 1;
-      margin: 28px 0px;
-  }
+section.next-section h2 {
+    text-shadow: 1px 2px 5px #000;
+    padding-top: 2em;
+    font-size: 48px;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+    animation: rightmove 3s infinite;
+    animation-iteration-count: 1;
+    margin: 28px 0px;
+}
   .real-content {
     width: 100%;
     margin: 0 auto;
     max-width: 1386px;
 }
   section.next-section p {
+      text-shadow: 1px 2px 5px #000;
+
       font-size: 20px;
       font-weight: 200;
       letter-spacing: 2px;
@@ -656,13 +724,13 @@ section.real-section .experience-rightpart {
 */}
   section.next-section a {
     font-weight: 600;
-    color: #00a295;
+    color: #fff;
   /*    border-radius: 12px;
   */    font-size: 12px;
       padding: 14px 35px 15px 32px;
       background: transparent;
 /*      color: white;
-*/      border: 2px solid #00a295;
+*/      border: 2px solid #fff;
       position: relative;
       animation: rightmove 3s infinite;
       animation-iteration-count: 1;
@@ -689,6 +757,8 @@ section.real-section .experience-rightpart {
       background-color: #d7655a;
       float: left;
       padding: 120px 0px 168px;
+      position: relative;
+      z-index: 9;
   }
 
   .bigger-contant {
@@ -765,18 +835,23 @@ section.real-section .experience-rightpart {
       float: left;
       padding: 0px 0px;
   }
-  body .realestate-section .contaant h2 {
+body .realestate-section .contaant h2 {
     color: #fff;
     font-size: 40px;
     font-weight: 600;
+    text-shadow: 1px 2px 5px #000;
 }
-body .realestate-section .contaant p {
-    padding-right: 960px;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
+body .realestate-section .contaant {
+    position: absolute;
+    top: 165px;
+    z-index: 9;
+    /* left: 80px; */
+    border: 2px solid #000;
+    border-radius: 14px;
+    width: 40%;
+    padding: 18px;
 }
-  body .realestate-section {
+ body .realestate-section {
     width: 100%;
     position: relative;
     padding-top: 0px !important;
@@ -960,11 +1035,20 @@ body .realestate-section .brand-one {
       padding-bottom: 10px;
       color: #00a295;
   }
+  body .realestate-section .contaant p {
+    padding-right: 0px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-shadow: 1px 2px 5px #000;
+}
 
   section.photo-section h2.domain-part {
       color: #000;
       text-align: center;
       font-size: 32px;
+
+
       font-weight: 600;
       padding-bottom: 35px;
   }
@@ -980,6 +1064,8 @@ body .realestate-section .brand-one {
       float: left;
       padding-top: 62px;
       padding-bottom: 62px;
+      position: relative;
+      z-index: 9;
   }
   section.sample-section .container {
       margin: 0 auto;
@@ -1050,8 +1136,8 @@ section.sample-section .brand-one::before {
       color: #597894;
   }
   section.next-section a:hover {
-      background-color: #00a295;
-      color: #fff !important;
+      background-color: #fff;
+      color: #000 !important;
   }
   section.main-section a:hover {
       background-color: #00A195 !important;
@@ -1259,13 +1345,14 @@ section.sample-section .brand-one::before {
       top: 0;
       opacity: 0.6;
   }*/
-  section.about-box-banner h2 {
-      font-size: 35px;
-      color: #fff;
-      position: relative;
-      font-weight: 600;
-      padding: 150px 0px;
-  } 
+section.about-box-banner h2 {
+    font-size: 35px;
+    color: #fff;
+    position: relative;
+    font-weight: 600;
+    padding: 150px 0px;
+    text-shadow: 1px 2px 2px #000;
+}
 
    section.conatct-banner {
         background-image: url('../images/food.jpg');
@@ -1277,7 +1364,7 @@ section.sample-section .brand-one::before {
         text-align: center;
         position: relative;
     }
-   /* section.conatct-banner::before {
+    section.conatct-banner::before {
       content: "";
       position: absolute;
       background-color: #000;
@@ -1285,15 +1372,16 @@ section.sample-section .brand-one::before {
       height: 100%;
       left: 0;
       top: 0;
-      opacity: 0.6;
-  }*/
+      opacity: 0.180;
+  }
   section.conatct-banner h2 {
-      font-size: 35px;
-      color: #000;
-      position: relative;
-      font-weight: 600;
-      padding: 150px 0px;
-  }   
+    font-size: 35px;
+    color: #fff;
+    position: relative;
+    font-weight: 600;
+    padding: 150px 0px;
+    text-shadow: 1px 2px 5px #000;
+}  
   section.conpage-section ul li {
       display: flex;
       align-items: center;
@@ -1681,6 +1769,10 @@ section.about-grid-section img {
   }
 
    @media (max-width: 1500px) {
+        section.sample-section h2.title {
+    font-size: 30px;
+  
+}
   section.other-section h4.main-head {
       font-size: 12px;
   }
@@ -1736,13 +1828,51 @@ section.about-grid-section img {
 
 
 
-  /*  @media (min-width: 1200px) {
-      .container {
-        max-width: 1390px !important;
+    @media (max-width: 1400px) {
+           .top-bar .site-contact.font-smooth {
+       padding-right: 45px;
+}
+.nav-button {
+        padding-right: 45px;
+}
     }
-    }*/
 
     @media (max-width: 992px) {
+      body .realestate-section .contaant {
+    
+    width: 56%;
+}
+      body .realestate-section .brand-one {
+    height: 58vh !important;
+    
+}
+      body .realestate-section .contaant {
+       left: 31px;
+}
+    /*  body .realestate-section .contaant p {
+    padding-right: 114px;
+    }*/
+      body .realestate-section .contaant h2 {
+    font-size: 30px;
+}
+      section.photo-section .picture {
+    width: 200px;
+}
+      .brand-area .container {
+       padding-left: 0px;
+}
+      section.logo-section .brand-area .col-lg-4 {
+    width: 33.33%;
+    float: left;
+}
+      section.sample-section .brand-one {
+      height: 300px;
+    
+}
+      .sticky {
+    padding-top: 20px;
+    padding-right: 12px;
+  }
       h2 {
       font-size: 16px;
   }
@@ -1840,7 +1970,7 @@ section.pricetable-section .table-box .prics-boxes p {
       padding-right: 20px;
   }
       .nav-barlogo img {
-      width: 20%;
+      width: 50%;
   }
   body .navbar-area .container {
       padding-left: 30px;
@@ -1880,8 +2010,9 @@ section.pricetable-section .table-box .prics-boxes p {
      
   }
   section.sample-section {
-      padding-left: 25px;
-      padding-right: 25px;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
   }
   .right-box img {
       padding-left: 26px;
@@ -1925,11 +2056,27 @@ section.pricetable-section .table-box .prics-boxes p {
   .info-left h2 {
       font-size: 26px;
   }
-  .first-part .first-box {
-      padding-left: 4px;
-      padding-right: 4px;
-  }
   .third-part textarea {
+    margin-left: 10px;
+    width: 99%;
+    padding-left: 10px;
+    height: 115px;
+    padding-top: 10px;
+}
+  .submit-button button.btn.btn-primary {
+    margin-left: 5px;
+    width: 25%;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    margin-top: 6px;
+    padding: 8px 20px;
+}
+ .first-part .first-box {
+    padding-left: 3px;
+    padding-right: 4px;
+    padding-bottom: 7px;
+}  .third-part textarea {
       margin-left: 5px;
   }
   .info-right form {
@@ -1971,7 +2118,34 @@ section.pricetable-section .table-box .prics-boxes p {
       border: none !important;
   }
   }
+
     @media only screen and (min-width: 1024px) and (max-width: 1024px) {
+      .top-bar img {
+    width: 58%;
+}
+      .top-bar .site-contact.font-smooth {
+    padding-right: 0px;
+}
+      .top-logo {
+    width: 22%;
+    float: left;
+    padding-top: 4px;
+}
+
+      body .realestate-section .contaant {
+       width: 54%;
+}
+      body .realestate-section .contaant {
+   
+    left: 25px;
+}
+   /*   body .realestate-section .contaant p {
+    padding-right: 172px;
+   }*/
+      .top-bar .site-contact.font-smooth .ct-item {
+    /* border-left: 1px solid #00000021; */
+    padding-left: 0px;
+}
       section.photo-section .shot-part .picture img {
       height: 250px;
   }
@@ -1998,8 +2172,42 @@ section.pricetable-section .table-box .prics-boxes p {
   }
   }
   */  @media (max-width: 767px) {
+    body .realestate-section .brand-one {
+    height: 80vh !important;
+}
+    body .realestate-section .contaant {
+        width: 92%;
+}
+    body .realestate-section .contaant {
+    top: 75px;
+    left: 14px;
+}
+    section.photo-section .picture {
+    width: 284px;
+}
+
+    section.homecontact-section {
+
+    padding-bottom: 35px;
+}
+    .third-part textarea {
+    width: 96%;
+}
+    .submit-button button.btn.btn-primary {
+    width: 40%;
+    padding: 6px 20px;
+}
+    section.sample-section .brand-one {
+    height: 135px;
+    padding: 0px;
+    width: 100%;
+}
+    .content-block a {
+    width: 100%;
+    float: left;
+}
     .real-content {
-    margin-top: -44px;
+    margin-top: -54px;
 }
     body .realestate-section .contaant p {
      padding-right: 0px; 
@@ -2119,7 +2327,7 @@ section.pricetable-section .table-box .prics-boxes p {
   }  
       section.sample-section {
       padding-top: 22px;
-      padding-bottom: 45px;
+      padding-bottom: 10px;
   }
       .right-box img {
       padding-left: 0px;
@@ -2261,3 +2469,15 @@ section.pricetable-section .table-box .prics-boxes p {
   }
     }
 
+ @media (max-width: 320px) {
+  body .realestate-section .brand-one {
+    height: 116vh !important;
+}
+body .realestate-section .contaant p {
+   
+    font-size: 13px;
+}
+.real-content {
+    margin-top: -82px;
+}
+}
